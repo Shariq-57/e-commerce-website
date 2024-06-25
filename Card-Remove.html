@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Remove</title>
-    <link rel="stylesheet" href="/js-4-10/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/js-4-10/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        #body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
     <script>
         function GetCategories(){
             fetch("https://fakestoreapi.com/products/categories")
@@ -141,7 +150,7 @@
             }         
     </script>
 </head>
-<body class="container-fluid" onload="bodyload()">
+<body id="body" class="container-fluid" onload="bodyload()">
     <header class="bg-danger text-white text-center p-2 w-100">
         <h1><span class="bi bi-cart4"></span>Shopping Online</h1>
     </header>
@@ -195,7 +204,7 @@
         </div>
       </div> 
 
-      <script src="/js-4-10/node_modules/jquery/dist/jquery.js"></script>
-      <script src="/js-4-10/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script src="node_modules/jquery/dist/jquery.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
